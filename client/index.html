@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./client.js" defer></script>
+
+    <style>
+      .idea-wrapper {
+        border: 1px solid blue;
+      }
+
+      .edit img {
+        height: 40px;
+      }
+
+      .delete:hover,
+      .edit-hover {
+        cursor: pointer;
+        transform: scale(1.3);
+        box-shadow: 0 0 1px;
+      }
+    </style>
+    <title>To Do</title>
+  </head>
+  <body>
+    <nav>
+      <a href="./index.html">Home page</a>
+      <a href="create.html">Create new idea</a>
+    </nav>
+
+    <dialog class="modal">
+      <label for="modal-title">Title</label>
+      <input type="text" id="modal-title" class="modal-title" />
+      <label for="modal-description"> description</label>
+      <input id="modal-description" type="text" />
+
+      <button id="cancel-btn">Cancel</button>
+      <button id="save-btn">Save</button>
+    </dialog>
+
+    <h1>The complete to do list</h1>
+  </body>
+</html>

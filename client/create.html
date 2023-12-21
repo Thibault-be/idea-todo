@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./create.js" defer></script>
+    <title>Add taks</title>
+  </head>
+  <body>
+    <nav>
+      <a href="./index.html">Home page</a>
+      <a href="create.html">Create new idea</a>
+    </nav>
+
+    <h1>Create a new task or idea</h1>
+
+    <form action="">
+      <label for="idea-title">idea</label>
+      <input type="text" id="idea-title" />
+      <label for="idea-description">description</label>
+      <input type="text" id="idea-description" />
+      <button class="log-idea" type="submit">Log idea!</button>
+    </form>
+
+    <div class="idea-list">
+      <h2>This was the last idea:</h2>
+      <h3 class="last-idea-title"></h3>
+      <p class="last-idea-description"></p>
+    </div>
+  </body>
+</html>
